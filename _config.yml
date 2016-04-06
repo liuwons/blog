@@ -37,8 +37,8 @@ safe: true
 lsi: false
 markdown: kramdown
 kramdown:
-  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
-    extensions:
+  #input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  extensions:
     - autolink
     - footnotes
     - smart

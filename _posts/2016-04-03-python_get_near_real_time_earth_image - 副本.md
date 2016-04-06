@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Python工具:下载卫星Himawari8拍摄的实时地球图片
 date: 2016-04-03 18:06:18
 categories: code

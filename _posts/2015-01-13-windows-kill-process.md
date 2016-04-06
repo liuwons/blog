@@ -7,12 +7,13 @@ categories: code
 ---
 
 Windows下C++程序有多种方式可以关闭进程：
+
 1. 通过执行命令行程序，如taskkill等。
 2. 向进程发送关闭信号
 3. 通过Windows API来关闭进程，如TerminateProcess函数
 
-<!--more-->
 以下函数通过调用TerminateProcess来关闭指定名称的进程。
+
 
 ``` cpp
 bool kill_process(const char* lpszProcessName)

@@ -6,8 +6,9 @@ categories: code
 tags: ffmpeg
 ---
 FFmpeg是一套可以用来记录、转换数字音频、视频，并能将其转化为流的开源计算机程序。采用LGPL或GPL许可证。它提供了录制、转换以及流化音视频的完整解决方案。它包含了非常先进的音频/视频编解码库libavcodec，为了保证高可移植性和编解码质量，libavcodec里很多codec都是从头开发的。
-<!--more-->
+
 以下代码在Qt环境下用ffmpeg解码视频流并将YUV转换为RGB格式。
+
 ``` cpp
 int MapThread::decode_write_frame(AVCodecContext *avctx, AVFrame *frame, AVPacket *pkt)
 {

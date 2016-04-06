@@ -5,8 +5,9 @@ date: 2015-01-30 15:17:12
 tags: Java
 categories: code
 ---
+
 Java可以很方便地实现发送Post请求，并在请求前转码。如下
-<!-- more -->
+
 ``` java
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,9 +33,9 @@ public class Main {
 
             conn.setDoOutput(true);
             conn.setDoInput(true);
-            
+
             byte[] utf8 = param.getBytes("utf8");
-            
+
             OutputStream os = conn.getOutputStream();
             os.write(utf8);
 
@@ -63,7 +64,7 @@ public class Main {
         }
         return result;
     }
-	
+
 	public static void main(String[] args) throws Exception{
 		System.out.println("start");
 		String res = sendPost("http://localhost:8080/test", req);

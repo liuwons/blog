@@ -98,6 +98,7 @@ categories: tech
 
 ### 2.搜索结果
 典型的搜索结果类似如下：
+
 ```json
 {
 	"status":"200 OK",

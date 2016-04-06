@@ -12,6 +12,7 @@ categories: tech
 <!-- more -->
 
 ## 1 Knowledge Graph
+
 ### 1.1 关键字搜索接口
 
 接口方式: HTTP GET
@@ -28,8 +29,11 @@ categories: tech
  - detailed description: 比较详细的介绍文章，包含摘要以及文章的url，文章大部分来自wikipedia。
 
 ## 2 Freebase
+
 提供关键字搜素接口，并提供html格式的实体信息页面。
+
 ### 2.1 关键字搜索
+
 接口方式: HTTP GET
 
 数据格式: json
@@ -42,6 +46,7 @@ categories: tech
 可以参考[Freebase搜索Beijing](https://www.googleapis.com/freebase/v1/search?query=beijing&format=entity)。
 
 ### 2.2 实体信息页面
+
 接口方式: HTTP GET
 
 数据格式: html
@@ -73,8 +78,11 @@ categories: tech
 数据内容可以参考[Freebase Beijing 信息页](https://www.freebase.com/m/01914)。
 
 ## 3 Wikidata
+
 提供关键字搜索接口，并能依据id进行实体详细信息查询。
+
 ### 3.1 关键字搜索
+
 接口方式: HTTP GET
 
 数据格式: html
@@ -82,6 +90,7 @@ categories: tech
 数据内容: 只包含相应实体在 **Wikidata** 中的id。
 
 ### 3.2 实体详细信息查询
+
 依据实体的 **Wikidata** id查询其详细信息。
 
 接口方式: HTTP GET

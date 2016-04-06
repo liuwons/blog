@@ -8,7 +8,7 @@ categories: code
 
 在Windows下捕获屏幕图像可以有多重方法，比较简单可以调用第三方库，如Qt的屏幕截屏API就很容易调用。
 在这里介绍如何用Windows API实现截屏并转换成RGB格式存储。
-<!-- more -->
+
 ```cpp
 #include <windows.h>
 //最终f的内存布局为BGRA格式，需要保证buf长度足够(>w*h*4)
@@ -47,5 +47,4 @@ void ScreenCap(void* buf, int* w, int* h)
     CloseWindow(hDesk);
     DeleteObject(hBitmap);
 }
-
 ```

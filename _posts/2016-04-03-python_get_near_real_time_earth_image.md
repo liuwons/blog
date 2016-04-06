@@ -39,4 +39,4 @@ python himawari8downloader.py earth.png 2
 
 ## 结果
 
-![Result Image](blog/earth.png)
+![Result Image](img/earth.png)

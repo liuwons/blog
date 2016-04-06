@@ -25,19 +25,10 @@ favicon_img_path: "imgs/favicon.ico"
 #markdown: kramdown
 #permalink: pretty
 
-
-
-
-
-
 ##################
 
+title: Wons Liu
 
-
-
-title: Yong Yuan
-
-# 自定义post url
 permalink: /blog/:title.html
 timezone: Asia/Shanghai
 
@@ -55,7 +46,7 @@ lsi: false
 #  syntax_highlighter: rouge
 #  coderay:
 #    coderay_line_numbers:  nil
-markdown: redcarpet
+#markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "underline"]
 

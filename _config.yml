@@ -4,7 +4,7 @@ baseurl: /
 # Site settings
 name: Wons Liu
 description: "Hello World"
-url: "/"
+url: ""
 
 
 # Delete the lines you don't need
@@ -15,7 +15,7 @@ twitter_username: "liuwons"
 google_plus_username: "liuwons"
 stack_of_username: "liuwons"
 weibo_username: "liuwons"
-blog_url: "/"
+blog_url: ""
 email: "a@wons.com"
 
 

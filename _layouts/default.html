@@ -3,22 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="aexITLS38FdIRzwj25OVWxm87rpa9l-UV0URTyC9cTs" />
-  <title>
-    {{ page.title }}
-    {% if page.category == 'blog' and page.url != '/blog/index.html' %}
-    - Yong Yuan
-    {% endif %}
-  </title>
+  <title>Wons Liu</title>
   <link rel="stylesheet" href="../css/site.css">
   <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
   {% if page.description %}<meta name="description" content="{{page.description}}" />{% endif %}
-  <link rel="alternate" type="application/atom+xml" title="RSS Feed for Yong Yuan's blog" href="/feed.xml" />
-
-  <!-- Return to
-  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
 
   <style type="text/css">
     .returnTop {
@@ -54,86 +43,26 @@
       {% if page.url == '/cn/' %}
       <nav>
         <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/cn/">关于</a>
-        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
-        <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
-        <a href="/resume/">简历</a>
-	    <!--<a href="/yuanyong_resume_cn.pdf">简历</a>
-        <a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">出版</a>-->
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
-        <a href="/books/">书单</a>
-		<a href="/timeline/">时间线</a>
-        <a href="https://github.com/willard-yuan">Github</a>
-      </nav>
-      {% elsif page.url == '/cn/project' %}
-      <nav>
-        <a class="{% if page.category == 'about-zh' %} selected {% endif %}" href="/cn/">关于</a>
-        <a class="{% if page.category == 'project-zh' %} selected {% endif %}" href="/cn/project">项目</a>
-        <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
-        <!--<a href="/yuanyong_resume_cn.pdf">简历</a>-->
-	    <a href="/resume/">简历</a>
-        <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">出版</a>-->
-        <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">博客</a>
-	    <a href="/books/">书单</a>
-		<a href="/timeline/">时间线</a>
-        <a href="https://github.com/willard-yuan">Github</a>
+        <a href="https://github.com/liuwons">Github</a>
       </nav>
       {% else %}
       <nav>
         <a class="{% if page.category == 'about' %} selected {% endif %}" href="/">About</a>
-        <a class="{% if page.category == 'project' %} selected {% endif %}" href="/project/">Project</a>
-        <!--<a class="{% if page.category == 'resume' %} selected {% endif %}" href="/resume/">Resume</a>-->
-	    <!--<a href="/yuanyong_resume_cn.pdf">Resume</a>-->
-	    <a href="/resume/">Resume</a>
-        <!--<a class="{% if page.category == 'publication' %} selected {% endif %}" href="/publication/">Publication</a>-->
         <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Blog</a>
-	    <a href="/books/">Book</a>
-		<a href="/timeline/">Times</a>
-        <a href="https://github.com/willard-yuan">Github</a>
+        <a href="https://github.com/liuwons">Github</a>
       </nav>
 	  {% endif %}
 
-      <div class="pull-right right logo">
-        <div class="name">
-          <a href="/">Yong Yuan</a><br />
-          <small>
-            <em>
-              {% if page.url == '/cn/index.html' %}
-                <a href="/cn">开发者</a>
-              {% else %}
-                <a href="/">developer</a>
-              {% endif %}
-            </em>
-          </small>
-        </div>
-        <a href="http://yongyuan.name/"><img class="avatar" src="/images/YongYuan.png" alt="My profile picture" /></a>
-      </div>
       <div class="clear"></div>
     </header>
     <div class="clear"></div>
   </div>
 
-    <!-- Test the scroll
-<div style="height:2000px;">
-
-  <h3>Scroll down</h3>
-  <h3><i class="icon-arrow-down"></i>
-
-</div>-->
-
   {{ content }}
   <div class="separator"></div>
 
   <div  style="border-bottom: 1px solid #eee"></div>
-    <footer>
-    <p class="linkings">
-        Utils: <a href="http://rogerioferis.com/VisualRecognitionAndSearch2014/Resources.html">rogerioferis</a>&nbsp&nbsp&nbsp&nbsp<a href="http://caffe.berkeleyvision.org/">Caffe</a>&nbsp&nbsp&nbsp&nbsp<a href="http://scikit-learn.org/stable/index.html">scikit-learn</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.astroml.org/index.html">AstroML</a></a>&nbsp&nbsp&nbsp&nbsp<a href="http://scikit-image.org/">scikit-image</a></a>&nbsp&nbsp&nbsp&nbsp<a href="http://gitxiv.com/">GitXiv</a>
-    </p>
-    </p>
-      <a href="http://www.easycounter.com/"><img src="http://www.easycounter.com/counter.php?willard"border="0" alt="Website Hit Counter"></a> since August 2013.
-    </p>
-    <ul class="links">
-    </ul>
-  </footer>
 
   <script type="text/javascript">
     /*

@@ -116,24 +116,25 @@ int main()
 
 常用的有两种方法：
 
-- 使用 `PyTuple_New` 创建元组， `PyTuple_SetItem` 设置元组值
+#### 使用 `PyTuple_New` 创建元组， `PyTuple_SetItem` 设置元组值
 
-    ```cpp
-    PyObject* args = PyTuple_New(3);
-    PyObject* arg1 = Py_BuildValue("i", 100); // 整数参数
-    PyObject* arg2 = Py_BuildValue("f", 3.14); // 浮点数参数
-    PyObject* arg3 = Py_BuildValue("s", "hello"); // 字符串参数
-    PyTuple_SetItem(args, 0, arg1);
-    PyTuple_SetItem(args, 1, arg2);
-    PyTuple_SetItem(args, 2, arg3);
-    ```
+```cpp
+PyObject* args = PyTuple_New(3);
+PyObject* arg1 = Py_BuildValue("i", 100); // 整数参数
+PyObject* arg2 = Py_BuildValue("f", 3.14); // 浮点数参数
+PyObject* arg3 = Py_BuildValue("s", "hello"); // 字符串参数
+PyTuple_SetItem(args, 0, arg1);
+PyTuple_SetItem(args, 1, arg2);
+PyTuple_SetItem(args, 2, arg3);
+```
 
-- 直接使用Py_BuildValue构造元组
+#### 直接使用Py_BuildValue构造元组
 
-    ```cpp
-    PyObject* args = Py_BuildValue("(ifs)", 100, 3.14, "hello");
-    PyObject* args = Py_BuildValue("()"); // 无参函数
-    ```
+```cpp
+PyObject* args = Py_BuildValue("(ifs)", 100, 3.14, "hello");
+PyObject* args = Py_BuildValue("()"); // 无参函数
+```
+
 `i`, `s`, `f`之类的格式字符串可以参考 [格式字符串][1]
 
 ### 2 转换 **Python** 返回值

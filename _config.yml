@@ -4,7 +4,7 @@ baseurl: /
 # Site settings
 name: Wons Liu
 description: "Hello World"
-url: ""
+url: "/"
 
 
 # Delete the lines you don't need

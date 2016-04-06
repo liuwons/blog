@@ -24,7 +24,7 @@ category: categories
 {% for cat in site.categories %}
   <li class="category-listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}（共{{ cat[1].size }}篇）</li>
 {% for post in cat[1] %}
-<li class="listing-item" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time></li>
+<a  id = "uniqueid" class="listing-item" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time></a>
 {% endfor %}
 {% endfor %}
 </section>

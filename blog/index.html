@@ -8,8 +8,8 @@ category: blog
 <div class="subheader-container">
 <div class = "inner">
 <nav class = "sub-nav">
-    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">时间线</a>
-    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">归档</a>
+    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">Time Line</a>
+    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">Category</a>
 </nav>
 </div>
 </div>
@@ -21,7 +21,6 @@ category: blog
 		{% assign year = y %}
 		<span class="listing-seperator">{{ y }}</span>
 	  {% endif %}
-    <!--<style>#uniqueid:hover{background-color: #D3D3D3; text-decoration: none;}</style>-->
     <a  id = "uniqueid" class="listing-item" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time></a>
     {% endfor %}
   </ul>

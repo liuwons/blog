@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Yong Yuan - Blog
+title: Wons Liu - Blog
 category: blog
 ---
 
@@ -10,21 +10,6 @@ category: blog
 </div>
 </div>
 <section class="inner">
-<!-- <h1>Blog Posts</h1>-->
-<!--  <p>My thoughts on Technology, Software Engineering, Lean Startup, Tools and Freelancing.</p>-->
-<!--  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="date">{{ post.date | date_to_string }}</span>
-        <strong><a href="{{ post.url }}">{{ post.title }}</a></strong>
-        {% if post.french %}
-          <img src="/images/french.png" alt="French post" class="french-flag" title="This post is in french" />
-        {% endif %}
-        <br />
-        <span class="description">{{ post.description }}</span>
-      </li>
-    {% endfor %}
-  </ul>-->
   <ul class="posts">
     {% for post in site.posts %}
 	  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}

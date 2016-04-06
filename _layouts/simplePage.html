@@ -61,7 +61,7 @@
       
       <div class="pull-right right logo">
         <div class="name">
-          <a href="/">Yong Yuan</a><br />
+          <a href="/">Wons Liu</a><br />
           <small>
             <em>
               {% if page.url == '/cn/index.html' %}
@@ -72,7 +72,7 @@
             </em>
           </small>
         </div>
-        <img class="avatar" src="/images/YongYuan.png" alt="My profile picture" />
+        <img class="avatar" src="/imgs/profile.jpg" alt="My profile picture" />
       </div>
       <div class="clear"></div>
     </header>
@@ -82,73 +82,6 @@
   {{ content }}
   <div class="separator"></div>
 
-<!--<div  style="border-bottom: 1px solid #ddd"></div>
-    <footer>
-    <ul class="links">
-      <li>
-        <a href="https://github.com/willard-yuan" title="See my code on GitHub">
-          <i class="icon-github"></i>
-        </a>
-      </li>	  
-      <li>
-        <a href="https://twitter.com/intent/follow?screen_name=yongyuan001" title="Follow me on Twitter">
-          <i class="icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/sebastiensaunier" title="Connect with me on LinkedIn">
-          <i class="icon-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://plus.google.com/+SebastienSaunier?rel=author" title="I need this link for authorship reasons">
-          <i class="icon-google-plus"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://pinboard.in/u:ssaunier" title="Browse my bookmarks about Programming">
-          <i class="icon-bookmarks"></i>
-        </a>
-      </li>
-      <li>
-        <a href="/feed.xml" title="Subscribe to my blog with RSS">
-          <i class="icon-feed"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>-->
-
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-40867989-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-    /*!
-     * http://github.com/ssaunier/track-outbound-links
-     * Copyright 2013 Sébastien Saunier
-     * @license MIT
-     */
-    !function(e,t){function n(){for(var n=t.getElementsByTagName("a"),a=[],r=0;r<n.length;++r){var o=n[r];o.host!=e.location.host&&a.push(o)}return a}function a(n){for(var a=n.srcElement||n.target;a&&("undefined"==typeof a.tagName||"a"!=a.tagName.toLowerCase()||!a.href);)a=a.parentNode;a&&a.href&&(e._gaq&&_gaq.push(["_trackEvent","Outbound link","Click",a.href]),(!a.target||a.target.match(/^_(self|parent|top)$/i))&&(setTimeout(function(){t.location.href=a.href},150),n.preventDefault?n.preventDefault():n.returnValue=!1))}e.addEventListener("load",function(){var e=n();for(var t in e)e[t].addEventListener("click",a)})}(window,document);
-    var links = document.links;
-    for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-       if (links[i].hostname != window.location.hostname) { links[i].target = '_blank'; }
-    }
-
-    /*
-     * Detect if we are included in an iframe => move.
-     */
-    if (window.top !== window.self
-        && !window.self.location.href.match(/headsha\.re/))
-    {
-      window.top.location.replace(window.self.location.href);
-    }
-  </script>
 
 </body>
 </html>

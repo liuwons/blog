@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 用Wikidata做实体搜索的两种方案
-date: 2016-01-18 26:33:25
+date: 2016-01-18 23:33:25
 tags: [Knowledge Graph]
 categories: tech
 ---

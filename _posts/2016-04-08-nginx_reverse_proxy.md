@@ -56,6 +56,7 @@ http {
 >If the address is specified without a URI, or it is not possible to determine the part of URI to be replaced, the full request URI is passed (possibly, modified).
 
 以上配置的转发示例：
+
   - `http://example.com/mail/index.html` -> `http://example.com:portmail/index.html`
   - `http://example.com/com/index.html` -> `http://example.com:portcom/main/index.html`
   - `http://example.com/mail/static/a.jpg` -> `http://example.com:portmail/static/a.jpg`

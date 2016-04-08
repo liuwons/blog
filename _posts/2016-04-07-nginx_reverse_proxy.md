@@ -1,7 +1,7 @@
 ---
 layout: post
 title: nginx实现请求转发
-date: 2016-04-08 18:49:02
+date: 2016-04-07 18:49:02
 categories: tech
 tags: nginx
 ---

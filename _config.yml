@@ -6,9 +6,6 @@ url: ""
 
 github_username:  "liuwons"
 csdn_username: "tobacco5648"
-#facebook_username: "liuwons"
-#stack_of_username: "6168463"
-#weibo_username: "liuwons"
 blog_url: "http://blog.lwons.com/blog"
 email: "a@lwons.com"
 
@@ -21,10 +18,6 @@ front_img_path: "imgs/background.jpg"
 
 favicon_img: yes
 favicon_img_path: "imgs/favicon.ico"
-
-# Build settings
-#markdown: kramdown
-#permalink: pretty
 
 ##################
 

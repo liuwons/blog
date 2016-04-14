@@ -4,15 +4,17 @@ permalink: /
 <!DOCTYPE html>
 <html>
 
+    {% if site.baidu %}
     <script>
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?223c8334613f17de83d2430fd15a79d6";
+      hm.src = "//hm.baidu.com/hm.js?{{ site.baidu_code }}";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
+    {% endif %}
 
     <head>
         <meta charset="utf-8">

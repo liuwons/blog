@@ -19,6 +19,9 @@ front_img_path: "imgs/background.jpg"
 favicon_img: yes
 favicon_img_path: "imgs/favicon.ico"
 
+baidu: yes
+baidu_code: "223c8334613f17de83d2430fd15a79d6"
+
 ##################
 
 title: Wons Liu

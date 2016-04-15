@@ -1,36 +1,16 @@
-# Site settings
-name: Wons Liu
-description: "Hello World"
-url: ""
+# Basic
+title: Wons' Blog
+subtitle: 个人博客
+welcome_message: Welcome
+description: 程序猿 - Python / C++
+creator: <a href="http://lwons.com">Wons Liu</a>
 
+url: "http://blog.lwons.com"
 
-github_username:  "liuwons"
-csdn_username: "tobacco5648"
-blog_url: "http://blog.lwons.com/blog"
-email: "a@lwons.com"
+permalink: /archieve/:title/
 
-
-avatar: yes
-avatar_img_path: "imgs/profile.jpg"
-
-front_img: yes
-front_img_path: "imgs/background.jpg"
-
-favicon_img: yes
-favicon_img_path: "imgs/favicon.ico"
-
-baidu: yes
-baidu_code: "223c8334613f17de83d2430fd15a79d6"
-
-##################
-
-title: Wons Liu
-
-permalink: /blog/:title.html
-timezone: Asia/Shanghai
-
-safe: true
-lsi: false
+# Format
+highlighter: plain
 markdown: kramdown
 kramdown:
   extensions:
@@ -41,9 +21,27 @@ kramdown:
   syntax_highlighter: rouge
   coderay:
     coderay_line_numbers:  nil
-# Keybase
-include:
-  - .well-known
 
-gems:
-  - jekyll-sitemap
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: red
+
+# The blog button should not be removed.
+blog_button:
+    title: Blog
+    description: Visit blog
+
+# Navigation buttons in the front page.
+nav:
+    - {title: About, description: About Me, url: '/about.html'}
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Social
+social:
+    weibo: liuwons
+    github: liuwons
+    twitter: liuwons
+    mail: a@lwons.com

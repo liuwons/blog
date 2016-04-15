@@ -10,7 +10,6 @@ url: "http://blog.lwons.com"
 permalink: /archieve/:title/
 
 # Format
-highlighter: plain
 markdown: kramdown
 kramdown:
   extensions:

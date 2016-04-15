@@ -7,7 +7,7 @@ creator: <a href="http://lwons.com">Wons Liu</a>
 
 url: "http://blog.lwons.com"
 
-permalink: /archieve/:title/
+permalink: /archieve/:title.html
 
 # Format
 markdown: kramdown

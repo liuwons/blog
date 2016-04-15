@@ -29,7 +29,6 @@ blog_button:
     title: Blog
     description: Visit blog
 
-# Navigation buttons in the front page.
 nav:
     - {title: About, description: About Me, url: '/about.html'}
 

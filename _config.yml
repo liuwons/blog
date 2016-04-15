@@ -22,7 +22,7 @@ kramdown:
     coderay_line_numbers:  nil
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+cover_color: blue
 
 # The blog button should not be removed.
 blog_button:
@@ -41,5 +41,4 @@ paginate_path: "page/:num/"
 social:
     weibo: liuwons
     github: liuwons
-    twitter: liuwons
     mail: a@lwons.com

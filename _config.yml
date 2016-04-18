@@ -30,7 +30,7 @@ blog_button:
     description: Visit blog
 
 nav:
-    - {title: About, description: About Me, url: '/archieve/about.html'}
+    - {title: About, description: About Me, url: '/archieve/about_me.html'}
 
 # Pagination
 gems: [jekyll-paginate]

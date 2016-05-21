@@ -10,7 +10,7 @@ tags: [Search Engine]
 
 使用site指定在某网站内搜索
 
-如只在知乎中搜索 *liuwons* : ```liuwons site:zhihu.com```
+例如只在知乎中搜索 *liuwons* : ```liuwons site:zhihu.com```
 
 ### 精确匹配
 
@@ -29,7 +29,7 @@ tags: [Search Engine]
 
 使用减号指定搜索结果中不包含某些内容
 
-如 ```liuwons -site:github.com``` 将不包含 github上的内容
+例如 ```liuwons -site:github.com``` 将不包含 **GitHub** 上的内容
 
 `liuwons -上海` 将不包含内容中含有 *上海* 的网页
 
@@ -37,7 +37,7 @@ tags: [Search Engine]
 
 使用 **filetype** 指定文件类型搜索
 
-如 ```effective java filetype:pdf``` 搜索 *effective java* 的电子书
+例如 ```effective java filetype:pdf``` 搜索 *effective java* 的pdf电子书资源
 
 ### 标题搜索
 

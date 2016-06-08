@@ -22,40 +22,40 @@ tags: [Android]
 
 4. 在重命名的 ```opencv``` 文件夹下创建一个 ```build.gradle``` 文件，内容如下( ```compileSdkVersion``` , ```buildToolsVersion``` , ```minSdkVersion``` , ```targetSdkVersion``` , ```versionCode``` ,  ```versionName``` 等可依实际情况而定)：
 
-    ```
-    apply plugin: 'android-library'
+```
+apply plugin: 'android-library'
 
-    buildscript {
-        repositories {
-            mavenCentral()
-        }
-        dependencies {
-            classpath 'com.android.tools.build:gradle:0.9.+'
-        }
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+    }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2411
+        versionName "2.4.11"
     }
 
-    android {
-        compileSdkVersion 23
-        buildToolsVersion "23.0.3"
-
-        defaultConfig {
-            minSdkVersion 15
-            targetSdkVersion 23
-            versionCode 2411
-            versionName "2.4.11"
-        }
-
-        sourceSets {
-            main {
-                manifest.srcFile 'AndroidManifest.xml'
-                java.srcDirs = ['src']
-                resources.srcDirs = ['src']
-                res.srcDirs = ['res']
-                aidl.srcDirs = ['src']
-            }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            res.srcDirs = ['res']
+            aidl.srcDirs = ['src']
         }
     }
-    ```
+}
+```
 
 5. 编辑项目根目录下的 ```settings.gradle``` 文件，添加一行代码：
 

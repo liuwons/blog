@@ -178,5 +178,7 @@ public class MainActivity extends AppCompatActivity
 ### 参考资料
 
 [知乎日报: Android相机开发那些坑](http://daily.zhihu.com/story/7989477)
+
 [Android Developers: Camera](https://developer.android.com/guide/topics/media/camera.html)
+
 [OpenCV Documentation: OpenCV4Android SDK](http://docs.opencv.org/2.4/doc/tutorials/introduction/android_binary_package/O4A_SDK.html)

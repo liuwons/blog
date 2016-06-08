@@ -14,13 +14,13 @@ tags: [Android]
 
 ## Android Studio项目中配置使用OpenCV Android SDK
 
-1. 在项目根目录下创建 ```libraries``` 目录。
+1 在项目根目录下创建 ```libraries``` 目录。
 
-2. 复制 **Android SDK** 中目录 ```sdk``` 下的 ```java``` 文件夹到刚刚创建的 ```libraries``` 目录中。
+2 复制 **Android SDK** 中目录 ```sdk``` 下的 ```java``` 文件夹到刚刚创建的 ```libraries``` 目录中。
 
-3. 将复制的 ```java``` 文件夹重命名为 ```opencv``` 。
+3 将复制的 ```java``` 文件夹重命名为 ```opencv``` 。
 
-4. 在重命名的 ```opencv``` 文件夹下创建一个 ```build.gradle``` 文件，内容如下( ```compileSdkVersion``` , ```buildToolsVersion``` , ```minSdkVersion``` , ```targetSdkVersion``` , ```versionCode``` ,  ```versionName``` 等可依实际情况而定)：
+4 在重命名的 ```opencv``` 文件夹下创建一个 ```build.gradle``` 文件，内容如下( ```compileSdkVersion``` , ```buildToolsVersion``` , ```minSdkVersion``` , ```targetSdkVersion``` , ```versionCode``` ,  ```versionName``` 等可依实际情况而定)：
 
 ```
 apply plugin: 'android-library'
@@ -57,21 +57,21 @@ android {
 }
 ```
 
-5. 编辑项目根目录下的 ```settings.gradle``` 文件，添加一行代码：
+5 编辑项目根目录下的 ```settings.gradle``` 文件，添加一行代码：
 
-    ```gradle
-    include ':libraries:opencv'
-    ```
+```gradle
+include ':libraries:opencv'
+```
 
-6. 在 **Android Studio** 中同步 **Gradle** 。
+6 在 **Android Studio** 中同步 **Gradle** 。
 
-7. 右键工程， ```Open Module Settings``` ， 左边选中应用的module名称，右边点击 ```Dependencies``` 选项，再点击 **+** 按钮，添加依赖。
+7 右键工程， ```Open Module Settings``` ， 左边选中应用的module名称，右边点击 ```Dependencies``` 选项，再点击 **+** 按钮，添加依赖。
 
-8. 选择 ```Module dependency```， 会出现一个含有多个module的列表，选择 ```:libraries:opencv``` 。
+8 选择 ```Module dependency```， 会出现一个含有多个module的列表，选择 ```:libraries:opencv``` 。
 
-9. 在 ```/app/src/main/``` 下创建一个 ```jniLibs``` 文件夹，再将 **OpenCV Android SDK** 中 ```sdk/native/libs``` 下的所有文件夹复制到创建的 ```jniLibs``` 目录下。
+9 在 ```/app/src/main/``` 下创建一个 ```jniLibs``` 文件夹，再将 **OpenCV Android SDK** 中 ```sdk/native/libs``` 下的所有文件夹复制到创建的 ```jniLibs``` 目录下。
 
-10. 同步Gradle， 完成配置。
+10 同步Gradle， 完成配置。
 
 ## 参考
 

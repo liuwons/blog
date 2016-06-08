@@ -23,7 +23,6 @@ tags: [Android]
 4. 在重命名的 ```opencv``` 文件夹下创建一个 ```build.gradle``` 文件，内容如下( ```compileSdkVersion``` , ```buildToolsVersion``` , ```minSdkVersion``` , ```targetSdkVersion``` , ```versionCode``` ,  ```versionName``` 等可依实际情况而定)：
 
     ```
-
     apply plugin: 'android-library'
 
     buildscript {
@@ -56,7 +55,6 @@ tags: [Android]
             }
         }
     }
-
     ```
 
 5. 编辑项目根目录下的 ```settings.gradle``` 文件，添加一行代码：

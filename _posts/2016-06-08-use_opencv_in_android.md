@@ -69,7 +69,7 @@ include ':libraries:opencv'
 
 8 选择 ```Module dependency```， 会出现一个含有多个module的列表，选择 ```:libraries:opencv``` 。
 
-9 在 ```/app/src/main/``` 下创建一个 ```jniLibs``` 文件夹，再将 **OpenCV Android SDK** 中 ```sdk/native/libs``` 下的所有文件夹复制到创建的 ```jniLibs``` 目录下。
+9 在 ```/app/src/main/``` 下创建一个 ```jniLibs``` 文件夹，再将 **OpenCV Android SDK** 中 ```sdk/native/libs``` 下的所有文件夹复制到创建的 ```jniLibs``` 目录下。 (  ```app/src/main/jniLibs``` 是 **Android Studio** 存放jni库的默认目录，可以在app的 ```build.gradle``` 文件中通过 ```jniLibs.srcDir``` 指定其他目录 )
 
 10 同步Gradle， 完成配置。
 
@@ -80,3 +80,5 @@ include ':libraries:opencv'
 [OpenCV Documentation: OpenCV4Android SDK](http://docs.opencv.org/2.4/doc/tutorials/introduction/android_binary_package/O4A_SDK.html)
 
 [OpenCV Documentation: Android Platform](http://opencv.org/platforms/android.html)
+
+[Android Tools: Gradle Plugin User Guide](http://tools.android.com/tech-docs/new-build-system/user-guide)

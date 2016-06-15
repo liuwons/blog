@@ -26,11 +26,11 @@ cover_color: blue
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
+    title: 博客
+    description: 访问博客
 
 nav:
-    - {title: About, description: About Me, url: '/archieve/about_me.html'}
+    - {title: 关于, description: 关于我, url: '/archieve/about_me.html'}
 
 # Pagination
 gems: [jekyll-paginate]

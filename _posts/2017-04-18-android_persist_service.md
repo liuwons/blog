@@ -6,7 +6,7 @@ categories: code
 tags: [Android]
 ---
 
-## 1. `Service`被杀死的两种场景
+## 1. Service被杀死的两种场景
 
 
 
@@ -14,7 +14,7 @@ tags: [Android]
 
 
 
-在系统内存空间不足时可能会被系统杀死以回收内存，内存不足时Android会依据`Service`的优先级来清除`Service`。
+在系统内存空间不足时可能会被系统杀死以回收内存，内存不足时Android会依据Service的优先级来清除Service。
 
 
 
@@ -22,7 +22,7 @@ tags: [Android]
 
 
 
-用户可以在"最近打开"(多任务窗口、任务管理窗口)中清除最近打开的任务，当用户清除了`Service`所在的任务时，`Service`可能被杀死(不同ROM有不同表现，在小米、魅族等第三方产商定制ROM上一般会被立即杀死，在Android N上没有被立即杀死)。
+用户可以在"最近打开"(多任务窗口、任务管理窗口)中清除最近打开的任务，当用户清除了Service所在的任务时，Service可能被杀死(不同ROM有不同表现，在小米、魅族等第三方产商定制ROM上一般会被立即杀死，在Android N上没有被立即杀死)。
 
 
 
@@ -30,7 +30,7 @@ tags: [Android]
 
 
 
-对于第一种场景(系统回收)，如果不用黑科技(双进程互开等)，我们只能够尽量提高`Service`的优先级，一种比较好的方式是使用**前台Service**。
+对于第一种场景(系统回收)，如果不用黑科技(双进程互开等)，我们只能够尽量提高Service的优先级，一种比较好的方式是使用**前台Service**。
 
 
 
@@ -46,7 +46,7 @@ tags: [Android]
 
 
 
-只需要在Service的`onCreate()` 或者 `onStartCommand()` 内调用`startForeground`，就能将Service转为前台Service。示例如下：
+只需要在Service的onCreate() 或者 onStartCommand() 内调用startForeground，就能将Service转为前台Service。示例如下：
 
 
 
@@ -87,7 +87,7 @@ public int onStartCommand(Intent intent, int flags, int startId) {
 
 
 
-为了使`Service`不会被用户从"最近打开"中清除，我们可以将启动`Service`的任务从系统的最近应用列表中删除。做法是将任务`Activity`的`excludeFromRecents`设为`true`，如下：
+为了使Service不会被用户从"最近打开"中清除，我们可以将启动Service的任务从系统的最近应用列表中删除。做法是将任务Activity的excludeFromRecents设为true，如下：
 
 
 

@@ -12,16 +12,24 @@ tags: [Android]
 
 #### NestedScrollingChild侧
 `NestedScrollingChild`(后面简称NC)处理`MotionEvent`(一般在`onTouchEvent`中，如果是`ViewGroup`还要注意`onInterceptTouchEvent`的处理，拦截滑动相关的`MotionEvent`事件)，分析用户滑动操作。
+
 在滑动开始时，调用`startNestedScroll`找到联动此次滑动的`NestedScrollingParent`(后面简称NP)。
+
 对于每次用户交互产生的滑动距离，先调用`dispatchNestedPreScroll`，询问联动NP是否预先处理此滑动，如果NP预先处理了，会给出消耗掉的滑动距离。
+
 对于NP预处理剩下的滑动距离，NC决定自己是否处理部分或者全部距离(自己的滑动)。
+
 如果NC自己滚动之后，还剩下部分滑动距离，则调用`dispatchNestedScroll`让NP自行选择是否处理最后剩下的这些滑动距离。
+
 用户交互停止滑动，调用`stopNestedScroll`通知NC停止滑动联动。
 
 #### NestedScrollingParent侧
 在`onStartNestedScroll`中，决定是否与此次NC发起的滑动请求联动，如果决定联动，返回`true`，否则返回`false`。返回`true`之后，会收到`onNestedScrollAccepted`回调，表示NC同意与其联动，可以开始做初始化操作了；返回false之后，后面的NC联动操作不会通知此`NestedScrollingParent`(不会收到后续的`onNestedPreScroll`、`onNestedScroll`、`onStopNestedScroll`等)。
+
 在`onNestedPreScroll`中，决定是否预处理滑动单步，并给出消耗掉的滑动距离(不处理则为0)。
+
 在`onNestedScroll`中，决定是否消耗NC处理剩下的滑动距离。
+
 在`onStopNestedScroll`做联动滑动收尾工作。
 
 通过NC与NP的配合，可以做到很多复杂的滑动操作。只要分析了界面上外层视图与内层视图在滑动时的交互逻辑，就可以利用这两个接口实现。
@@ -63,14 +71,23 @@ void onNestedScroll(@NonNull View target, int dxConsumed, int dyConsumed, int dx
 相应的交互逻辑改为：
 
 #### NestedScrollingChild侧
+
 在fling开始时，调用`startNestedScroll`找到联动此次滑动的`NestedScrollingParent`(后面简称NP)。
+
 每次刷新视图时，计算当前时间片由fling产生的滑动距离，先调用`dispatchNestedPreScroll`，询问联动NP是否预先处理此滑动距离，如果NP预先处理了，会给出消耗掉的滑动距离。
+
 对于NP预处理剩下的滑动距离，NC决定自己是否处理部分或者全部距离(自己的滑动)。
+
 如果NC自己滚动之后，还剩下部分滑动距离，则调用`dispatchNestedScroll`让NP自行选择是否处理最后剩下的这些滑动距离。
+
 用户交互停止滑动，调用stopNestedScroll通知NC停止滑动联动。
 
 #### NestedScrollingParent侧
+
 在`onStartNestedScroll`中，决定是否与此次NC发起的fling联动请求，如果决定联动，返回 `true` ，否则返回 `false` 。返回`true`之后，会收到`onNestedScrollAccepted`回掉，表示NC同意与其联动，可以开始做初始化操作了；返回false之后，后面的NC联动操作不会通知此`NestedScrollingParent`(不会收到后续的`onNestedPreScroll`、`onNestedScroll`、`onStopNestedScroll`等)。
+
 在`onNestedPreScroll`中，决定是否预处理fling产生的滑动距离，并给出消耗掉的滑动距离(不处理则为0)。
+
 在`onNestedScroll`中，决定是否消耗NC处理剩下的滑动距离。
+
 在`onStopNestedScroll`做联动滑动收尾工作。

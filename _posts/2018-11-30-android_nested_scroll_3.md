@@ -12,7 +12,7 @@ tags: [Android]
 
 Android中经常在布局中嵌入 **WebView** 来展示网页内容，而且WebView内部还有交互逻辑（滚动之类的），如果外部布局也要处理滚动逻辑，就会有滑动冲突，这种场景在实际项目开发中很常见，例如在含有 `AppBarLayout` 的 `CoordinatorLayout` 中嵌入一个 **WebView** ， **WebView** 底部再放一个 **footer** 放置收藏按钮等，需要在向上滑动时首先保持 **WebView** 跟随 `AppBarLayout` 滑动，在 `AppBarLayout` 滑出屏幕之后， **WebView** 全屏展示，继续滑动 **WebView** ，**WebView** 划到底之后将 **WebView** 及 **footer** 一起向上继续滑动。实际效果如下图：
 
-![实际滑动效果](https://github.com/liuwons/NestedScrollExample/blob/master/nested_scroll.gif)
+![实际滑动效果](https://github.com/liuwons/NestedScrollExample/raw/master/nested_scroll.gif)
 
 ## 需求解析
 
